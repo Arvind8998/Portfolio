@@ -472,14 +472,11 @@ background-size: cover;
 /*******  Reviews   *******/
 #Reviews{
 padding: 80px 0px 40px;
-/* text-align: center; */
 background-image: url("https://demo.w3layouts.com/demos_new/template_demo/30-10-2018/recognize_demo_Free/1686477365/web/images/testimonials.jpg");
 background-size: cover;
-/* background-attachment: fixed; */
 overflow: hidden;
 position: relative; 
 height: 35vw;
-
 }
 
 #Reviews .headings h4{
@@ -539,6 +536,62 @@ text-transform: uppercase !important;
     display: inline-block;
     margin: 0px -2px
 }
+
+
+/******* Contact Me *****/
+#contactMe{
+padding: 80px 0px 40px;
+background-image: url("https://demo.w3layouts.com/demos_new/template_demo/30-10-2018/recognize_demo_Free/1686477365/web/images/contact.jpg");
+background-size: cover;
+overflow: hidden;
+position: relative; 
+height: 35vw;
+}
+
+#contactMe .headings h3{
+color: #037ef3;
+font-size: 0.85em;
+font-weight: 400;
+letter-spacing: 4px;
+}
+
+#contactMe .headings h4{
+text-shadow: 2px 2px 2px rgba(41, 41, 41, 0.15);
+font-size: 2.5em;
+font-weight: 700;
+color:#fff;
+}
+
+#contactMe .row .col{
+width: 33%;
+margin-left: 2em;
+}
+
+#contactMe .row .col .address-info .address-left{
+text-align: center;
+}
+
+#contactMe .row .col .address-info .address-right{
+    text-align: center;
+}
+
+#contactMe .row .col .address-info .address-left i{
+font-size: 2em;
+color: #ffd900;
+}
+
+#contactMe .row .col .address-info .address-right h6{
+font-size: 0.8em;
+letter-spacing: 1px;
+margin-top: 1em;
+color: #e8e7e7;
+}
+
+#contactMe .row .col .address-info .address-right p{
+color: #e8e7e7;
+line-height: 0.8em;
+}
+
 
 
 /***** Footer *****/
@@ -614,10 +667,16 @@ padding: 80px 0px 40px;
     border: 2px solid #333;
     border-radius: 50%;
     width:32px;
+    color:#333;
     display: inline-block;
     text-align: center;
     line-height: 30px;
     height:32px;
+}
+
+#footer .container .copyrightlinks .SocialMedia ul li a:hover{
+color: #037ef3;
+border: 2px solid #037ef3;
 }
 
 /* Specific CSS */
