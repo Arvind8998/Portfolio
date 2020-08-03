@@ -130,7 +130,7 @@ h6 {
 /***** Banner *****/
 
 #banner {
-    height: 600px;
+    height: 670px;
     background-image: url("https://demo.w3layouts.com/demos_new/template_demo/30-10-2018/recognize_demo_Free/1686477365/web/images/banner.jpg");
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -249,7 +249,7 @@ h6 {
     margin-bottom: 5px;
 }
 
-#about .technology .bar {
+#about .technology .bar, .reactBar, .Laravelbar, .Bootstrapbar, .CSSbar, .HTML5bar, .MongoDBbar, .Expressbar, .NodeJsbar, .reduxBar {
     height: 10px;
     background-color: #E1E2E2;
     border-radius: 20px;
@@ -258,11 +258,83 @@ h6 {
 
 #about .web .bar:after {
     content: "";
-    width: 40%;
+    width: 90%;
     position: absolute;
     height: 100%;
     border-radius: 20px;
     background-color: #037EF3;
+}
+#about .web .reactBar:after {
+    content: "";
+    width: 90%;
+    position: absolute;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #ffc107;
+}
+#about .web .Laravelbar:after {
+    content: "";
+    width: 90%;
+    position: absolute;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #dc3545;
+}
+#about .web .Bootstrapbar:after {
+    content: "";
+    width: 90%;
+    position: absolute;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #17a2b8;
+}
+#about .web .Expressbar:after {
+    content: "";
+    width: 90%;
+    position: absolute;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #dc3545;
+}
+#about .web .CSSbar:after {
+    content: "";
+    width: 90%;
+    position: absolute;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #40ff00;
+}
+#about .web .NodeJsbar:after {
+    content: "";
+    width: 90%;
+    position: absolute;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #40ff00;
+}
+#about .web .MongoDBbar:after {
+    content: "";
+    width: 90%;
+    position: absolute;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #ffc107;
+}
+#about .web .reduxBar:after {
+    content: "";
+    width: 90%;
+    position: absolute;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #28a745;
+}
+#about .web .HTML5bar:after {
+    content: "";
+    width: 90%;
+    position: absolute;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #6c757d;
 }
 
 
@@ -400,14 +472,26 @@ background-size: cover;
 /*******  Reviews   *******/
 #Reviews{
 padding: 80px 0px 40px;
-text-align: center;
+/* text-align: center; */
 background-image: url("https://demo.w3layouts.com/demos_new/template_demo/30-10-2018/recognize_demo_Free/1686477365/web/images/testimonials.jpg");
-background-size: 100% 100%;
+background-size: cover;
 /* background-attachment: fixed; */
 overflow: hidden;
-/* position: relative; */
-/* height: 600px; */
+position: relative; 
+height: 35vw;
 
+}
+
+#Reviews .headings h4{
+    font-size: 0.85em;
+    color: #037ef3;
+}
+
+#Reviews .headings h3{
+text-shadow: 2px 2px 2px rgba(41, 41, 41, 0.15);
+font-size: 2.5em;
+color: #333338;
+font-weight: 700;
 }
 
 #Reviews .container{
@@ -416,6 +500,10 @@ overflow: hidden;
 
 #carousel .carouselItem .testimonialText{
 text-transform: uppercase !important;
+}
+
+#carousel .carouselItem .testimonialText .largeItem{
+    font-size: 3em;
 }
 
 #carousel{
@@ -430,7 +518,7 @@ text-transform: uppercase !important;
 }
 20%,
 38%{
-    transform: translateX(-20%);
+    transform: translateX(-18%);
 }
 40%,
 58%{
@@ -455,7 +543,81 @@ text-transform: uppercase !important;
 
 /***** Footer *****/
 
-#footer {}
+#footer {
+padding: 80px 0px 40px;
+}
 
+#footer .container .row .Sectionscol{
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+#footer .container .row{
+    padding-bottom: 1.5em;
+}
+#footer .container .row .Sectionscol ul li a{
+    color: #888;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#footer .container .row .logo a .logo_img{
+    background-color: #037EF3;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    padding-top: 7px;
+}
+
+#footer .container .row .logo .logo_img {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#footer .container .row .logo span {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+
+#footer .copyrightlinks .copyright p a{
+    color: #037ef3;
+}
+#footer .container .row .OffsetSpace{
+    margin-left: 33.3%;
+}
+
+#footer .copyrightlinks{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#footer .container .copyrightlinks .SocialMedia ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 1em;
+}
+
+#footer .container .copyrightlinks .SocialMedia ul {
+    display: flex;
+}
+
+#footer .container .copyrightlinks .SocialMedia ul li a{
+    border: 2px solid #333;
+    border-radius: 50%;
+    width:32px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    height:32px;
+}
 
 /* Specific CSS */
