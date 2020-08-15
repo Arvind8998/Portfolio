@@ -131,8 +131,9 @@ h6 {
 
 #banner {
     height: 670px;
-    background-image: url("https://demo.w3layouts.com/demos_new/template_demo/30-10-2018/recognize_demo_Free/1686477365/web/images/banner.jpg");
-    background-size: 100% 100%;
+    background-position: 100% 30%;
+    background-image: url("../Images/Profile\ .jpg");
+    background-size: 100% 2000px;
     background-attachment: fixed;
     overflow: hidden;
     position: relative;
