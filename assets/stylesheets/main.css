@@ -133,7 +133,7 @@ h6 {
     height: 670px;
     background-position: 100% 30%;
     background-image: url("../Images/Profile\ .jpg");
-    background-size: 100% 2000px;
+    background-size: 100% 2560px;
     background-attachment: fixed;
     overflow: hidden;
     position: relative;
@@ -375,6 +375,11 @@ h6 {
 
 #services .col:hover {
     background-color: #037EF3;
+}
+
+#services .aeo-logo{
+    margin-bottom: 1em;
+    width:10em;
 }
 
 
