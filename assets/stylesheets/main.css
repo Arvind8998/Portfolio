@@ -131,9 +131,9 @@ h6 {
 
 #banner {
     height: 670px;
-    background-position: 100% 30%;
+    background-position: 100% 27%;
     background-image: url("../Images/Profile\ .jpg");
-    background-size: 100% 2560px;
+    background-size: 100% 2550px;
     background-attachment: fixed;
     overflow: hidden;
     position: relative;
@@ -446,7 +446,10 @@ transition: all 0.8s ease;
     opacity: 1;
 }
 
-
+#projects .container a{
+    text-decoration: none;
+    color: #fff;
+}
 
 /****** Experience *********/
 
@@ -501,6 +504,10 @@ font-weight: 700;
     overflow: hidden;
 }
 
+.testimonialText{
+text-align: center;
+}
+
 #carousel .carouselItem .testimonialText{
 text-transform: uppercase !important;
 }
@@ -513,6 +520,22 @@ text-transform: uppercase !important;
     width: 500%;
     animation : carouselItem 5s infinite
 }
+.endorser{
+    text-align: center;
+}
+.endorser h3{
+    margin: 1em 0 0.6em 0;
+    color: #333;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.endorser h4{
+    color: #037ef3;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
 @keyframes carouselItem{
 0%,
@@ -521,7 +544,7 @@ text-transform: uppercase !important;
 }
 20%,
 38%{
-    transform: translateX(-18%);
+    transform: translateX(-20%);
 }
 40%,
 58%{
