@@ -76,6 +76,7 @@ h6 {
     color: #fff;
     font-size: 40px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 #header .logo a .logo_img {
@@ -85,13 +86,12 @@ h6 {
     text-align: center;
     height: 60px;
     width: 60px;
-    padding-top: 7px;
+    padding: 2.3px 0px 0px 1.3px;
 }
 
 
 /***** Main Navigation *****/
 
-#main-navigation {}
 
 #main-navigation ul {
     display: flex;
@@ -108,6 +108,7 @@ h6 {
     display: block;
     color: #fff;
     padding-top: 7px;
+    text-decoration: none;
 }
 
 #main-navigation ul li.active a,
@@ -187,17 +188,23 @@ h6 {
 #banner .desc h4 {
     color: #ffd900;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 0.5em 0;
 }
 
 #banner .desc h3 {
+    margin: 0.5em 0;
     color: #fff;
-    font-size: 30px;
+    font-size: 1.4em;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 #banner .desc h1 {
-    font-size: 60px;
+    margin: 0.5em 0;
+    font-weight: 600;
+    font-size: 4em;
     color: #fff;
     text-transform: uppercase;
 }
@@ -219,6 +226,7 @@ h6 {
 }
 
 #about .col {
+    flex-basis: auto;
     width: 30%;
     margin-bottom: 30px;
 }
@@ -232,6 +240,8 @@ h6 {
     margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-size:0.85em;
+    font-weight:400;
 }
 
 .headings h2 {
@@ -240,22 +250,51 @@ h6 {
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 80px;
+    font-weight:700;
     text-shadow: 2px 2px 2px rgba(41, 41, 41, 0.15);
 }
 
-#about .technology h5 {
+#about .row .col h5 {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #4f4f50;
     margin-bottom: 5px;
+    font-size: 0.85em;
+    font-weight: 600;
 }
 
-#about .technology .bar, .reactBar, .Laravelbar, .Bootstrapbar, .CSSbar, .HTML5bar, .MongoDBbar, .Expressbar, .NodeJsbar, .reduxBar {
-    height: 10px;
+#about .row .col .progress{
+    height: 0.5rem;
     background-color: #E1E2E2;
-    border-radius: 20px;
-    position: relative;
 }
+
+#about .row .col .progress .graphql-bar{
+background-color: yellowgreen;
+}
+
+#about .row .col .progress .angular-bar{
+    background-color: #FF704D;
+    }
+
+#about .row .col .progress .laravel-bar{
+    background-color: #E37330;
+    }
+
+#about .row .col .progress .html-bar{
+    background-color: #7BDCA6;
+    }
+
+#about .row .col .progress .css-bar{
+    background-color: #BB2C3E;
+    }
+
+#about .row .col .progress .bootstrap-bar{
+    background-color: #6C92CC;
+    }
+
+#about .row .col .progress .sql-bar{
+    background-color: #D94D4A;
+    }
 
 #about .web .bar:after {
     content: "";
@@ -352,10 +391,26 @@ h6 {
 #services .headings h2 {
     color: #fff;
     margin-bottom: 50px;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgba(41, 41, 41, 0.15);
+}
+
+#services .headings h5 {
+    font-size: 0.85em;
+    color: #037ef3;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 4px;
+
 }
 
 #services .buttons {
     margin-bottom: 50px;
+}
+
+#services .row {
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #services .col {
@@ -428,7 +483,7 @@ background: #030605;
 bottom: 23px;
 left: 30px;
 opacity: 0;
-padding: 1em;
+padding: 0.23em;
 position: absolute;
 right: 30px;
 text-align: center;
@@ -493,7 +548,7 @@ height: 35vw;
     color: #037ef3;
 }
 
-#Reviews .headings h3{
+#Reviews .headings h2{
 text-shadow: 2px 2px 2px rgba(41, 41, 41, 0.15);
 font-size: 2.5em;
 color: #333338;
@@ -506,6 +561,8 @@ font-weight: 700;
 
 .testimonialText{
 text-align: center;
+margin-left:1em;
+margin-right:1em;
 }
 
 #carousel .carouselItem .testimonialText{
@@ -528,6 +585,7 @@ text-transform: uppercase !important;
     color: #333;
     font-size: 0.9em;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .endorser h4{
@@ -591,6 +649,10 @@ font-weight: 700;
 color:#fff;
 }
 
+#contactMe .row{
+margin-top: 5em;
+}
+
 #contactMe .row .col{
 width: 33%;
 margin-left: 2em;
@@ -651,7 +713,7 @@ padding: 80px 0px 40px;
     text-align: center;
     height: 60px;
     width: 60px;
-    padding-top: 7px;
+    padding: 2.3px 0px 0px 1.3px;
 }
 
 #footer .container .row .logo .logo_img {
@@ -660,10 +722,11 @@ padding: 80px 0px 40px;
     font-weight: bold;
 }
 
-#footer .container .row .logo span {
+#footer .container .row .logo a {
     color: black;
     font-size: 40px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 
@@ -673,6 +736,10 @@ padding: 80px 0px 40px;
 }
 #footer .container .row .OffsetSpace{
     margin-left: 33.3%;
+}
+
+#footer .container .row .OffsetSpace .logo a span{
+    text-decoration: none;
 }
 
 #footer .copyrightlinks{
