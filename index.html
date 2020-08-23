@@ -26,18 +26,18 @@
             <div class="container">
                 <div class="row justify-space-between">
                     <div class="logo">
-                        <a href="#">
-                            <span class="logo_img"><i class="fas fa-crosshairs"></i></span>
-                            <span>PORTFOLIO</span>
+                        <a href="https://www.linkedin.com/in/arvind-sangwan-424631169/" target="_blank">
+                            <span class="linkedIn"><img src="https://image.flaticon.com/icons/png/512/174/174857.png" width="42px"></img></span>
+                            <span class="LinkedInHead">LinkedIn</span>
                         </a>
                     </div>
                     <nav id="main-navigation">
                         <ul>
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li id ="Nav-Home" class="active"><a href="#">Home</a></li>
+                            <li id="Nav-About"><a href="#">About</a></li>
+                            <li id="Nav-Services"><a href="#">Services</a></li>
+                            <li id ="Nav-Projects"><a href="#">Projects</a></li>
+                            <li id="Nav-Contact"><a href="#">Contact</a></li>
                             <li>
                                 <button class="btn">Login</button>
                             </li>
@@ -60,8 +60,8 @@
                 <h3>Hello My name is ARVIND SANGWAN</h3>
                 <h1>I'm a Software Engineer</h1>
                 <div class="buttons">
-                    <a href="#" class="btn btn-white">My Work</a>
-                    <a href="#" class="btn btn-primary">Hire me</a>
+                    <a id="My-Projects" href="#" class="btn btn-white">My Work</a>
+                    <a id="Hire-me" href="#" class="btn btn-primary">Hire me</a>
                 </div>
             </div>
 
@@ -468,7 +468,7 @@
                             <div class="logo">
                                 <a href="#">
                                     <span class="logo_img"><i class="fas fa-crosshairs"></i></span>
-                                    <span >PORTFOLIO</span>
+                                    <span id="footer-portfolio">PORTFOLIO</span>
                                 </a>
                             </div>
                     </div>
@@ -489,6 +489,48 @@
                     </div>
                 </div>
             </section>
+    <script>
+$("#Nav-Home").click(function() {
+    $('html, body').animate({
+    scrollTop: $("#banner").offset().top
+    }, 1000);
+});
+$("#Nav-About").click(function() {
+    $('html, body').animate({
+    scrollTop: $("#about").offset().top
+    }, 1000);
+});
+$("#Nav-Services").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#services").offset().top
+    }, 1000);
+});
+$("#Nav-Projects").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#projects").offset().top
+    }, 1000);
+});
+$("#Nav-Contact").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contactMe").offset().top
+    }, 1000);
+});
+$("#Hire-me").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contactMe").offset().top
+    }, 1000);
+});
+$("#My-Projects").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#projects").offset().top
+    }, 1000);
+});
+$("#footer-portfolio").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#banner").offset().top
+    }, 1000);
+});
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
