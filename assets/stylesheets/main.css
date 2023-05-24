@@ -412,6 +412,8 @@ background-color: yellowgreen;
 }
 
 #services .row {
+    display: flex;
+    width: 90vw;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -419,10 +421,15 @@ background-color: yellowgreen;
 #services .col {
     background-color: rgba(243, 244, 245, 0.17);
     color: #fff;
+    width:33%;
     text-align: center;
     margin: 0px 20px;
+    max-height: 40em;
+    height: 30em;
     padding: 50px;
     transition: 0.5s;
+    text-overflow: ellipsis ;
+    overflow: hidden;
 }
 
 #services .col i {
